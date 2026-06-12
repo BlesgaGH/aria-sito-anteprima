@@ -111,8 +111,8 @@ body.brochure{ background:var(--bg-soft); }
 .page > h2.page-title{ font-size:1.7rem;margin-bottom:1rem; }
 
 /* ---- Override densità componenti riusati ---- */
-.brochure .feature-grid{ grid-template-columns:1fr 1fr;gap:4.5mm; }
-.brochure .feature{ padding:4mm;box-shadow:none;border:1px solid var(--line);break-inside:avoid; }
+.brochure .feature-grid{ grid-template-columns:1fr 1fr;gap:4mm; }
+.brochure .feature{ padding:3.6mm;box-shadow:none;border:1px solid var(--line);break-inside:avoid; }
 .brochure .feature h3{ font-size:.94rem;margin-bottom:.3rem;line-height:1.2; }
 .brochure .feature p{ font-size:.8rem;line-height:1.5; }
 .brochure .feature-list{ gap:.32rem;margin-top:.5rem; }
