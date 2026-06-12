@@ -221,10 +221,11 @@ body.brochure{ background:var(--bg-soft); }
 .clients-page .kicker{ color:var(--steel); }
 .clients-page h2{ color:#fff; }
 .clients-page .lead-intro{ color:rgba(255,255,255,.82); }
-.client-grid{ display:flex;flex-wrap:wrap;gap:4mm;justify-content:center;margin-top:1rem; }
-.brochure .client-grid .client-tile{ width:42mm;height:22mm;box-shadow:0 6px 18px rgba(0,0,0,.18); }
-.brochure .client-grid .client-tile img{ filter:none;opacity:1;height:26px; }
-.brochure .client-grid .client-tile img.lg{ height:40px; }
+.client-grid{ display:flex;flex-wrap:wrap;gap:4mm;justify-content:center;margin-top:1.2rem; }
+.brochure .client-grid .client-tile{ width:42mm;height:28mm;gap:.4rem;box-shadow:0 6px 18px rgba(0,0,0,.18);padding:.7rem; }
+.brochure .client-grid .client-tile img{ filter:none;opacity:1;height:auto;width:auto;max-height:40px;max-width:82%;object-fit:contain; }
+.brochure .client-grid .client-tile img.lg{ max-height:44px; }
+.brochure .client-grid .client-tile span{ font-size:.6rem;font-weight:700;line-height:1.1;color:var(--navy);letter-spacing:.01em;text-align:center; }
 
 /* Contatti (retro) */
 .contact-page{ background:linear-gradient(160deg,var(--navy-900),var(--navy) 55%,var(--navy-700));color:#fff;align-items:center;text-align:center;justify-content:center; }
