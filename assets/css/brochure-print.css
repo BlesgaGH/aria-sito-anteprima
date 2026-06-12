@@ -72,6 +72,12 @@ body.brochure{ background:var(--bg-soft); }
 }
 .page-foot strong{ color:var(--navy);font-family:var(--f-head); }
 
+/* Numero di pagina automatico (formato N / 17): compare solo sulle pagine
+   con .page-foot, quindi NON su copertina e retro. Conta tutti i fogli. */
+.brochure{ counter-reset:pageno; }
+.brochure .page{ counter-increment:pageno; }
+.page-foot::after{ content:counter(pageno) " / 17";font-variant-numeric:tabular-nums;white-space:nowrap; }
+
 /* ---- Copertina ---- */
 /* Specificità .page.cover per battere `.brochure .page{background:#fff}` */
 .brochure .page.cover{ background:linear-gradient(160deg,var(--navy-900),var(--navy) 55%,var(--navy-700)); }
