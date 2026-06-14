@@ -126,6 +126,13 @@ body.brochure{ background:var(--bg-soft); }
 .brochure .card-icon{ width:34px;height:34px;border-radius:10px;margin-bottom:.5rem; }
 .brochure .card-icon svg{ width:18px;height:18px; }
 
+/* Pagina Formazione (06): la griglia riempie l'altezza disponibile e la card
+   "Docenti qualificati" (.feature-tall) occupa due righe, arrivando fino in fondo
+   alla pagina; accanto, due card normali impilate (Sicurezza partecipata + Progettazione). */
+.brochure .page-formazione .feature-grid{ flex:1 1 auto;grid-template-rows:auto auto 1fr 1fr; }
+.brochure .page-formazione .feature{ display:flex;flex-direction:column;justify-content:center; }
+.brochure .page-formazione .feature.feature-tall{ grid-row:span 2; }
+
 /* Statistiche */
 .brochure .stats-band{ margin:0 0 2rem;border-radius:var(--radius);overflow:hidden; }
 .brochure .stats-band .stat{ padding:1.7rem 1rem; }
